@@ -18,6 +18,10 @@ mv custom.db.tar.gz custom.db
 mv custom.files.tar.gz custom.files
 #mv custom.files.tar.gz.sig custom.files.sig
 
+git add .
+git commit -am "Updating db"
+git push
+
 echo "#######################################"
 echo "Packages in the x86_64 Repo are up2date!"
 echo "#######################################"
