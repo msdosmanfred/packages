@@ -22,6 +22,10 @@ git add .
 git commit -am "Updating db"
 git push
 
-echo "#######################################"
-echo "Packages in the x86_64 Repo are up2date!"
-echo "#######################################"
+tput setaf 2
+
+echo "############################################"
+echo "# Packages in the x86_64 Repo are up2date! #"
+echo "############################################"
+
+tput sgr0
