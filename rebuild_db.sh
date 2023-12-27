@@ -3,8 +3,8 @@ bold=$(tput setaf 2)
 normal=$(tput sgr0)
 
 echo -e "\n\t${bold}################################"
-echo "\t# Building the x86_64 Repo DB. #"
-echo "\t################################${normal}"
+echo -e "\t# Building the x86_64 Repo DB. #"
+echo -e "\t################################${normal}"
 
 cd x86_64
 rm -f custom*
