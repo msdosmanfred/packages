@@ -9,7 +9,7 @@ echo -e "\t################################${normal}"
 cd x86_64
 rm -f custom*
 
-repo-add -n -R custom.db.tar.gz *.pkg.tar.zst
+repo-add -n -R custom.db.tar.gz *.pkg.tar.zst &> /dev/null
 
 rm custom.db
 #rm custom.db.sig
