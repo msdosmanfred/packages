@@ -1,7 +1,10 @@
 #!/bin/bash
-echo "###########################"
-echo "Building the x86_64 Repo DB."
-echo "###########################"
+bold=$(tput setaf 2)
+normal=$(tput sgr0)
+
+echo -e "\n\t${bold}################################"
+echo "\t# Building the x86_64 Repo DB. #"
+echo "\t################################${normal}"
 
 cd x86_64
 rm -f custom*
@@ -21,9 +24,6 @@ mv custom.files.tar.gz custom.files
 git add .
 git commit -am "Updating db"
 git push
-
-bold=$(tput setaf 2)
-normal=$(tput sgr0)
 
 echo -e "\n\t${bold}############################################"
 echo -e "\t# Packages in the x86_64 Repo are up2date! #"
