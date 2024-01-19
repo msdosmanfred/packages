@@ -7,19 +7,19 @@ echo -e "\t# Building the x86_64 Repo DB. #"
 echo -e "\t################################${normal}"
 
 cd x86_64
-rm -f custom*
+rm -f arschlive*
 
-repo-add -n -R custom.db.tar.gz *.pkg.tar.zst &> /dev/null
+repo-add -n -R arschlive.db.tar.gz *.pkg.tar.zst &> /dev/null
 
-rm custom.db
-#rm custom.db.sig
-rm custom.files
-#rm custom.files.sig
+rm arschlive.db
+#rm arschlive.db.sig
+rm arschlive.files
+#rm arschlive.files.sig
 
-mv custom.db.tar.gz custom.db
-#mv custom.db.tar.gz.sig custom.db.sig
-mv custom.files.tar.gz custom.files
-#mv custom.files.tar.gz.sig custom.files.sig
+mv arschlive.db.tar.gz arschlive.db
+#mv arschlive.db.tar.gz.sig arschlive.db.sig
+mv arschlive.files.tar.gz arschlive.files
+#mv arschlive.files.tar.gz.sig arschlive.files.sig
 
 git add .
 git commit -am "Updating db"
